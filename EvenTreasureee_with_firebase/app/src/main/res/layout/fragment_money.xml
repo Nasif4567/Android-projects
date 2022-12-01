@@ -1,0 +1,571 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/modifiedtoolbar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/PLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:elevation="16dp"
+            android:padding="16dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="casual"
+                android:text="Your costs "
+                android:textColor="@android:color/darker_gray"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:text="Entertainment :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/entcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Groceries :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/grocost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Outside food :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/outfcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:inputType="number"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Bills :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/billcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Transport :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/transcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Health care :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/healthcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Self care :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/selfcost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Subscription :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/subscost"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Wages :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/wagesm"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="10dp"
+                android:text="Saving :"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:id="@+id/savingm"
+                android:layout_width="343dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:enabled="false"
+                android:textColor="@color/black" />
+
+            <Switch
+                android:id="@+id/switchediting"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enable editing" />
+
+            <Button
+                android:id="@+id/updatebtn"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update spendings" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:padding="16dp">
+
+
+        <Button
+            android:id="@+id/trackbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Track your daily records !"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/showhistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:text="Show history of daily record"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/ic_launcher_background" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:text="Your weekly spending graph"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="This week :"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Start day of this week :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day0txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day0"
+            android:textSize="16sp" />
+
+
+
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="1st day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day1txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day1"
+            android:textSize="16sp" />
+
+
+
+
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="2nd day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day2txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day2"
+            android:textSize="16sp" />
+
+
+
+
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="3rd day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day3txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day3"
+            android:textSize="16sp" />
+
+
+
+
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="4th day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day4txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day4"
+            android:textSize="16sp" />
+
+
+
+
+
+
+
+        <View
+            android:id="@+id/divider90"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="5th day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day5txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day5"
+            android:textSize="16sp" />
+
+
+
+
+
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="6th day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day6txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day6"
+            android:textSize="16sp" />
+
+
+
+
+
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="7th day :"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/day7txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="20dp"
+            android:text="day7"
+            android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="132dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:text="Days"
+            android:textSize="16sp" />
+
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/linechart"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="399dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" />
+
+
+        <TextView
+            android:id="@+id/tes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cost"
+            android:textSize="16sp" />
+
+
+
+    </LinearLayout>
+
+
+
+       </LinearLayout>
+
+
+
+
+
+
+
+</ScrollView>

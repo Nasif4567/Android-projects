@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+
+    <LinearLayout
+        android:id="@+id/homelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/modifiedtoolbar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="127dp"
+            android:layout_height="42dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Your spendings"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/include"
+            app:layout_constraintHorizontal_bias="0.103"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.075" />
+
+        <LinearLayout
+            android:id="@+id/QLayout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/border"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:elevation="16dp"
+            android:padding="16dp">
+
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchat"
+            android:layout_width="312dp"
+            android:layout_height="296dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+        </com.github.mikephil.charting.charts.BarChart>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/alertlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/alertext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*Note* that you haven't answered our question to make the saving sceduler for you, anyways you can do it in the manage money" />
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+
+            <TextView
+                android:layout_width="199dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Your monthly wages"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/wagestxt"
+                android:layout_width="199dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="47dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="The money you want to save :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/moneysavetxt"
+                android:layout_width="199dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="203dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="The percentage you want to save :"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dpercentagetxt"
+                android:layout_width="199dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="240dp"
+            android:layout_height="42dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:text="The plan we have prepared for you to save the money you want !"
+            android:textSize="18sp"/>
+
+
+
+       <LinearLayout
+            android:id="@+id/Q1Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/border"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Entertainment:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/entpbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/entpertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The amound is :"
+            android:textSize = "18sp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/entamount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Groceries:"
+                android:textSize="18sp" />
+
+
+           <ProgressBar
+               android:id="@+id/grobar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8"
+
+               />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/gropertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/groamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Outside food:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/outpbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/outfpertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/outfamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Health care:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/healthbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/healtextper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/healthamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Transport:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/transbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/transtxtper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/transamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Subscription:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/subsbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/subscriptionpertxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/subsamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider7"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Bills:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/billsbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+
+           <TextView
+                android:id="@+id/billtxtper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/billsamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider8"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="Self shopping:"
+                android:textSize="18sp" />
+
+           <ProgressBar
+               android:id="@+id/selfbar"
+               style="@android:style/Widget.ProgressBar.Horizontal"
+               android:layout_width="match_parent"
+               android:layout_height="30dp"
+               android:layout_marginBottom="10dp"
+               android:progressBackgroundTint="#D8BFD8" />
+
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="5dp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:text="The percentage % you can substract (-) :"
+               android:textSize="18sp" />
+
+
+           <TextView
+                android:id="@+id/selftxtper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="sans-serif-condensed-light"
+                android:text="0"
+                android:textSize="18sp" />
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="The amound is :"
+               android:textSize = "18sp"
+               android:fontFamily="sans-serif-condensed-light"
+               android:layout_marginBottom="5dp" />
+
+           <TextView
+               android:id="@+id/selfamount"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="0"
+               android:layout_marginBottom="10dp"
+               android:textSize="18sp"
+               android:fontFamily="sans-serif-condensed-light"/>
+
+            <View
+                android:id="@+id/divider10"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

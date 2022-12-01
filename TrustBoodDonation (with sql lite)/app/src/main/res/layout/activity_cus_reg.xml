@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".CusReg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Blood donation "
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="30dp"
+        android:text="Customer Registration"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        android:elevation="20dp"
+        android:background="@drawable/customer_layout">
+
+        <EditText
+            android:id="@+id/fn1"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="12dp"
+            android:hint="First name"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+        <EditText
+            android:id="@+id/ln1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:hint="Last name"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+        <Spinner
+            android:id="@+id/gn"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/da1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:focusable="false"
+            android:padding="12dp"
+            android:hint="Date of Birth"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+        <EditText
+        android:id="@+id/pn1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:padding="12dp"
+        android:inputType="number"
+        android:hint="Phone number"
+        android:textColor="@color/black"
+        android:background="@drawable/custom_field" />
+
+        <EditText
+            android:id="@+id/em"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:hint="Email"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+        <EditText
+            android:id="@+id/ad"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:hint="Address"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+        <EditText
+            android:id="@+id/bg1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:padding="12dp"
+            android:hint="Blood group"
+            android:textColor="@color/black"
+            android:background="@drawable/custom_field" />
+
+
+        <Button
+            android:id="@+id/reg1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/button_custom"
+            android:text="Registraion"
+            android:layout_marginBottom="30dp"
+            android:textColor="#354243"
+            app:backgroundTint="@null"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

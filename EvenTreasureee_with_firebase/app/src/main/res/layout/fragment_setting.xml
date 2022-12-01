@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:textAlignment="center"
+    tools:layout_editor_absoluteX="400dp"
+    tools:layout_editor_absoluteY="300dp">
+
+
+
+    <LinearLayout
+        android:id="@+id/settinglayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/modifiedtoolbar"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ic_launcher_background"
+            android:text="Signout"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/deleteacc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/ic_launcher_background"
+            android:text="Delete account"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/ic_launcher_background" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

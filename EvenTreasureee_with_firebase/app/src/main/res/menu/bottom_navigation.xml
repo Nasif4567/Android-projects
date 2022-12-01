@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:title="Home"
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_baseline_home_24"/>
+
+    <item
+        android:title="Profile "
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_baseline_profile_24"/>
+
+
+    <item
+        android:title="Manage Money "
+        android:id="@+id/nav_money"
+        android:icon="@drawable/ic_baseline_money_24"/>
+    <item
+        android:title="Setting"
+        android:id="@+id/nav_setting"
+        android:icon="@drawable/ic_baseline_settings_24"/>
+
+
+
+</menu>

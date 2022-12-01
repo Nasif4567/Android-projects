@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ViewHistory">
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your history of spendings"
+        android:textSize="24sp"
+        android:layout_marginBottom="30dp"
+        />
+
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/Layouttextview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="196dp"
+                android:layout_height="match_parent"
+                android:text="Dates"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:layout_width="173dp"
+                android:layout_height="match_parent"
+                android:text="Spendings"
+                android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/Layoutlistview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ListView
+                android:id="@+id/ListViewdates"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content" />
+
+
+
+    <ListView
+        android:id="@+id/listspending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

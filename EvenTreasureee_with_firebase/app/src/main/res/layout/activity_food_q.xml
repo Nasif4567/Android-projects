@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".food_q"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/logo_of_buget_planner"
+        app:srcCompat="@drawable/logo_of_buget_planner" />
+
+
+
+    <LinearLayout
+        android:id="@+id/QLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:elevation="16dp"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/Q3head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="Question 3"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/Q3"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="How much you spend on groceries in a month on average ?"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/A3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="RM"
+            />
+
+        <Button
+            android:id="@+id/A3nextbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+
+        <Button
+            android:id="@+id/skipbtn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I will not be speding on this catagory on this month ,so i will skip the question"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
